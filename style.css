@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/*GENERAL STYLES*/
+body {
+  font-family: 'Barlow Semi Condensed';
+  font-size: 13px;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+}
+.main-container {
+ margin: 50px 30px;
+}
+
+.div1, .div2, .div3, .div4, .div5 {
+  border-radius: 10px;
+ padding: 30px 25px;
+ margin-bottom: 30px;
+ position: relative;
+  z-index: -3;
+}
+.div1-flexbox, .div2-flexbox, .div3-flexbox, .div4-flexbox, .div5-flexbox{
+  display: flex;
+  column-gap: 18px;
+  margin-bottom: 15px;
+}
+#img-daniel, #img-jonathan, #img-jeanette, #img-patrick, #img-kira {
+  width: 35px;
+  border-radius: 20px;
+}                         
+.div1-p1, .div2-p1, .div3-p1, .div4-p1, .div5-p1 {
+font-weight: 600;
+margin-bottom: 3px;
+}
+.div1-p2, .div2-p2, .div3-p2, .div4-p2, .div5-p2{
+  opacity: 0.5;
+}
+.div1-p3, .div2-p3, .div3-p3, .div4-p3, .div5-p3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.div1-p4, .div2-p4, .div3-p4, .div4-p4, .div5-p4 {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+/* SECTION 1*/
+.div1 {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+
+#img-daniel {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+ 
+.position {
+position: absolute;
+top: 0;
+right: 20px;
+z-index: -1;
+}
+
+/* SECTION 2*/
+.div2 {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+#img-jonathan {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+
+/* SECTION 3*/
+.div3 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+#img-jeanette {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+/* SECTION 4*/
+.div4 {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 100%);
+}
+#img-patrick {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+
+/* SECTION 5*/
+.div5 {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+#img-kira {
+  border: 2px solid hsl(0, 0%, 100%);
+}
+
+/*RESPONSIVENESS*/
+
+@media (min-width: 1000px) {
+  .main-container {
+    margin: 80px 60px;
+    display: flex;
+    column-gap: 30px;
+ }
+ .div-grid1 {
+  flex: 2;
+ }
+ .div-grid2 {
+  flex: 1;
+ }
+ .div-row1, .div-row2 {
+  display: flex;
+  column-gap: 30px;
+ }
+ 
+}
